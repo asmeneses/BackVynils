@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: npm run start:prod
+addons:
+  - plan: heroku-postgresql
+    as: DATABASE
